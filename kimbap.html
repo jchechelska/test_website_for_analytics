@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Kimbap</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="relative container mx-auto p-6">
+        <!--Flex container-->
+        <div class="flex items-center justify-between">
+            <!--Logo -->
+            <div class="pt-2">
+                <a href="index.html">
+                    <img src="icons/logo1.png" alt="">
+                </a>
+            </div>
+            <!--Menu items -->
+            <div class="hidden md:flex space-x-6">
+                <a href="food.html" class="text-sky-700">Food recipes</a>
+                <a href="trivia.html" class="hover:text-sky-700">Trivia</a>
+                <a href="language.html" class="hover:text-sky-700">Language tips</a>
+                <a href="products.html" class="hover:text-sky-700">Products</a>
+                <a href="about.html" class="hover:text-sky-700">About Us</a>
+            </div>
+            <!--Button -->
+            <a href="newsletter.html" class="hidden md:block p-3 px-6 pt-2 text-white bg-sky-700 rounded-full baseline hover:bg-sky-600">Newsletter signup</a>
+            <!-- Hamburger icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="food.html" class="hover:text-sky-700">Food recipes</a>
+                <a href="trivia.html" class="hover:text-sky-700">Trivia</a>
+                <a href="language.html" class="hover:text-sky-700">Language tips</a>
+                <a href="products.html" class="hover:text-sky-700">Products</a>
+                <a href="about.html" class="hover:text-sky-700">About Us</a>
+                <a href="newsletter.html" class="hover:text-sky-700">Newsletter signup</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Recipe -->
+    <div class="container flex mx-auto px-4 py-6">
+        <h1 class="text-4xl font-bold text-center md:text-5xl md:text-left">Kimbap (김밥) recipe </h1>
+    </div>
+    <div class="container flex flex-col md:flex-row mx-auto px-4 py-6 space-x-4 md:space-y-4">
+        <div class="flex flex-col px-4 md:w-1/2 pr-6">
+            <img src="icons/kimbap2.jpg" alt="" class="rounded-lg align-left md:align-middle">
+        </div>
+        <div class="flex flex-col md:w-1/2 py-4 md:py-0">
+            <h2 class="text-3xl font-bold text-center md:text-4xl md:text-left pb-4">
+                Ingredients
+                
+            </h2>
+            <ul class="text-center md:text-left md:list-disc pl-6">
+                <li>5 sheets of kim (seaweed paper) (sometimes called “nori” from Japanese) </li>
+                <li>4 cups cooked rice </li>
+                <li>1 large carrot,  cut into matchsticks </li>
+                <li>1 cucumber, cut into matchsticks </li>
+                <li>5 strips of yellow pickled radish </li>
+                <li>1/2 cup of tuna </li>
+                <li>3 eggs </li>
+                <li>soft cheese (Almette) </li>
+                <li>soy sauce </li>
+                <li>young ginger</li>
+                <li>sesame</li>
+                <li>sesame oil</li>
+                <li>mayonnaise</li>
+                <li>pepper</li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="container flex flex-col mx-auto ">
+        <h2 class="text-3xl font-bold text-center md:text-4xl md:text-left pb-4 md:pl-8">
+            Directions
+        </h2>
+        <ol class="text-center md:text-left list-decimal pl-6 mx-20 space-y-2 pb-6">
+            <li>Place freshly made rice in a large, shallow bowl. Gently mix in 2 teaspoons toasted sesame oil and 
+                4 spoons of sesame over top 
+                with wooden spoon. Set it aside so it can cool down.</li>
+            <li>Mix tuna with 1 spoon of mayonnaise and pinch of pepper. </li>
+            <li>Crack 3 eggs in a bowl and add ¼ teaspoon salt. Beat it with fork and remove the stringy chalaza. </li>
+            <li>Drizzle a few drops of oil on a heated 10 to 12 inch non-stick pan. 
+                Wipe off the excess with a paper towel so only a thin sheen of oil remains. 
+                Turn down the heat to low and pour the egg mixture into the pan. Spread it into a large circle so it fills the pan. </li>
+            <li>When the bottom of the egg is cooked, flip it over with a spatula. 
+                Remove from the heat and let it cook slowly in the hot pan for about 5 minutes, with the ultimate goal of keeping the egg as yellow as possible, and not brown. </li>
+            <li>Cut it into ½ inch wide strips. Put it next to the spinach on the platter. </li>
+            <li>Place a sheet of kim on a bamboo mat with the shiny side down. 
+                Evenly spread about ¾ cup of cooked rice over top of it, leaving about 2 inches uncovered on one side of the kim. </li>
+            <li>Place tuna, carrot, cucumber, yellow pickled radish strip, a few egg strips, and cheese in the center of the rice. </li>
+            <li>Use both hands to roll the mat (along with kim and rice) over the fillings, 
+                so one edge of the rice and kim reaches the opposite edge. 
+                This centers the fillings in the roll, so they’ll be nicely in the middle when you slice it. </li>
+            <li>Grab the mat with both hands and and press it tightly as you continue rolling the kimbap. 
+                Push out the mat as you roll, so it doesn’t get wrapped in the kimbap.</li>
+            <li>Remove the roll from the mat at the end and set the finished roll aside with the seam down, to seal it nicely.</li>
+            <li>Repeat 4 more times with the remaining ingredients.</li>
+            <li>Put some toasted sesame oil on the finshed rolls and sprinkle some sesame seeds over top. 
+                Cut each roll into ¼ inch bite size pieces with a sharp knife, 
+                occasionally wiping it with a wet paper towel or cloth to clean the starch off and to ease cutting.</li>
+            <li>Put it on a plate and serve immediately or pack it in a lunchbox. Eat dipping each roll in the soy sauce. 
+                Between pieces try eating some young ginger strips.
+            </li>
+        </ol>
+        <h2 class="text-3xl font-bold text-center md:text-4xl md:text-left pb-4 md:pl-8">
+            Enjoy!
+        </h2>
+        <a href="https://www.maangchi.com/recipe/gimbap" class="px-8 text-center md:text-left hover:text-sky-700 pb-8">Source here</a>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-sky-700">
+        <!-- Flex container -->
+        <div class="container flex flex-col justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links -->
+            <div class="flex flex-col items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="flex justify-center space-x-4">
+                    <div>
+                        <img src="icons/logo2.png" style="height:80px">
+                    </div>
+                    <a href="https://www.instagram.com/a.hehe/?hl=en">
+                        <img src="icons/instagram-logo.png" style="height:40px" class="mt-4">
+                    </a>
+                    <a href="https://www.linkedin.com/in/joanna-chechelska-b11661222/">
+                        <img src="icons/linkedin.png" style="height:40px"class="mt-4">
+                    </a>
+                    <a href="about.html">
+                        <img src="icons/email.png" style="height:40px"class="mt-4">
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-4">
+                    <a href="food.html" class="hover:text-white">Food recipes</a>
+                    <a href="trivia.html" class="hover:text-white">Trivia</a>
+                    <a href="language.html" class="hover:text-white">Language tips</a>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <a href="products.html" class="hover:text-white">Products</a>
+                    <a href="about.html" class="hover:text-white">About Us</a>
+                    <a href="newsletter.html" class="hover:text-white">Newsletter signup</a>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
