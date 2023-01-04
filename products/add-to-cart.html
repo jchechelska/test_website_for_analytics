@@ -312,7 +312,7 @@
     <script>
         const purchase = document.getElementById('purchase-successful');
         purchase.addEventListener('click', () => {
-            alert('hello '+ window.parent.location);
+            alert('hello '+ window.parent.parent.location);
             const referrerURL = window.frames.top.document.referrer.split('/');
             const referrer = referrerURL[5];
             switch (referrer){
