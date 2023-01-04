@@ -93,7 +93,7 @@
             </p>            
             <!--Button -->
             <div class="content-center mx-auto md:mx-0">
-                <a href="../../newsletter.html" class="text-center content-center p-3 px-6 pt-2 text-white bg-sky-700 rounded-full baseline hover:bg-sky-600 w-50">Add to cart</a>
+                <a href="../add-to-cart.html" id="add-to-cart-soysauce" class="text-center content-center p-3 px-6 pt-2 text-white bg-sky-700 rounded-full baseline hover:bg-sky-600 w-50">Add to cart</a>
             </div>
             <a href="../food-products.html" class="text-1xl text-center md:text-left font-bold hover:text-sky-700">Check out other products</a>
             
@@ -141,6 +141,23 @@
         </div>
     </footer>
 
-    <script src="../index.js" charset="utf-8"></script>
+    <script src="../../index.js" charset="utf-8"></script>
+    <script>
+        const soysauceToCart = document.getElementById('add-to-cart-soysauce');
+        soysauceToCart.addEventListener('click', () => {
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            'event': 'addToCart',
+            'item':{
+                'itemName': 'Homemade soy sauce',
+                'itemId': 'f04',
+                'currency': 'PLN',
+                'itemListName': 'Food & kitchen',
+                'price':'50',
+                'discout': 'false'
+        }
+    });
+});
+    </script>
 </body>
 </html>

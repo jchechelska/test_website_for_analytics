@@ -21,8 +21,9 @@
                     'price':'35',
                     'discout': 'false'
                 }
-            });
+        });
         </script>
+        
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -94,7 +95,7 @@
             </p>            
             <!--Button -->
             <div class="content-center mx-auto md:mx-0">
-                <a href="../../newsletter.html" class="text-center content-center p-3 px-6 pt-2 text-white bg-sky-700 rounded-full baseline hover:bg-sky-600 w-50">Add to cart</a>
+                <a href="../add-to-cart.html" id="add-to-cart-chopsticks" class="text-center content-center p-3 px-6 pt-2 text-white bg-sky-700 rounded-full baseline hover:bg-sky-600 w-50">Add to cart</a>
             </div>
             <a href="../food-products.html" class="text-1xl text-center md:text-left font-bold hover:text-sky-700">Check out other products</a>
             
@@ -142,6 +143,22 @@
         </div>
     </footer>
 
-    <script src="../index.js" charset="utf-8"></script>
+    <script src="../../index.js" charset="utf-8"></script>
+    <script>
+        const chopsticksToCart = document.getElementById('add-to-cart-chopsticks');
+        chopsticksToCart.addEventListener('click', () => {
+        dataLayer.push({
+            'event': 'addToCart',
+            'item':{
+            'itemName': 'Handmade chopsticks',
+            'itemId': 'f01',
+            'currency': 'PLN',
+            'itemListName': 'Food & kitchen',
+            'price':'35',
+            'discout': 'false'
+            }
+            })
+        });
+    </script>
 </body>
 </html>
