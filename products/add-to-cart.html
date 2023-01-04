@@ -12,7 +12,7 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         const viewreferrerURL = window.frames.top.document.referrer.split('/');
-        const viewreferrer = viewreferrerURL[5];
+        const viewreferrer = viewreferrerURL[6];
         switch (viewreferrer){
             case 'chopsticks.html':
                 dataLayer.push({
@@ -253,7 +253,7 @@
         </div>
     </nav>
     <div id="cart" class="container flex flex-col mx-auto text-center md:text-left px-4 py-6">
-        <h1 class="text-4xl font-bold md:text-5xl">Cart testing 5</h1>
+        <h1 class="text-4xl font-bold md:text-5xl">Cart</h1>
         <h2 class="text-2xl md:text-3xl">This are fake products, you cannot buy anything in here</h1>
         <h2 class="text-2l font-bold md:text-3xl">Do you want to buy this product for analysis purposes?</h2>    
         <div class="content-center mt-6 mx-auto md:mx-0">
@@ -314,7 +314,6 @@
         purchase.addEventListener('click', () => {
             const referrerURL = document.referrer.split('/');
             const referrer = referrerURL[6];
-            alert(referrer);
             switch (referrer){
                 case 'chopsticks.html':
                     dataLayer.push({
@@ -508,7 +507,7 @@
             const remove = document.getElementById('remove-from-cart');
             remove.addEventListener('click', () => {
                 const removeReferrerURL = document.referrer.split('/');
-                const removeReferrer = removeReferrerURL[5];
+                const removeReferrer = removeReferrerURL[6];
                 switch (removeReferrer){
                     case 'chopsticks.html':
                         dataLayer.push({
