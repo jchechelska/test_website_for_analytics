@@ -11,9 +11,9 @@
     <!-- Data Layer custom data -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        const referrerURL = window.frames.top.document.referrer.split('/');
-        const referrer = referrerURL[5];
-        switch (referrer){
+        const viewreferrerURL = window.frames.top.document.referrer.split('/');
+        const viewreferrer = viewreferrerURL[5];
+        switch (viewreferrer){
             case 'chopsticks.html':
                 dataLayer.push({
                     'event': 'viewCart',
@@ -312,8 +312,7 @@
     <script>
         const purchase = document.getElementById('purchase-successful');
         purchase.addEventListener('click', () => {
-            alert('hello '+ document.referrer);
-            const referrerURL = window.frames.top.document.referrer.split('/');
+            const referrerURL = document.referrer.split('/');
             const referrer = referrerURL[5];
             switch (referrer){
                 case 'chopsticks.html':
@@ -507,9 +506,9 @@
         <script>
             const remove = document.getElementById('remove-from-cart');
             remove.addEventListener('click', () => {
-                const referrerURL = window.frames.top.document.referrer.split('/');
-                const referrer = referrerURL[5];
-                switch (referrer){
+                const removeReferrerURL = document.referrer.split('/');
+                const removeReferrer = removeReferrerURL[5];
+                switch (removeReferrer){
                     case 'chopsticks.html':
                         dataLayer.push({
                             'event': 'removeFromCart',
