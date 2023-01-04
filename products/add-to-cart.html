@@ -11,7 +11,7 @@
     <!-- Data Layer custom data -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        const referrerURL = document.referrer.split('/');
+        const referrerURL = window.frames.top.document.referrer.split('/');
         const referrer = referrerURL[5];
         switch (referrer){
             case 'chopsticks.html':
@@ -312,7 +312,7 @@
     <script>
         const purchase = document.getElementById('purchase-successful');
         purchase.addEventListener('click', () => {
-            const referrerURL = document.referrer.split('/');
+            const referrerURL = window.frames.top.document.referrer.split('/');
             const referrer = referrerURL[5];
             switch (referrer){
                 case 'chopsticks.html':
@@ -506,7 +506,7 @@
         <script>
             const remove = document.getElementById('remove-from-cart');
             remove.addEventListener('click', () => {
-                const referrerURL = document.referrer.split('/');
+                const referrerURL = window.frames.top.document.referrer.split('/');
                 const referrer = referrerURL[5];
                 switch (referrer){
                     case 'chopsticks.html':
