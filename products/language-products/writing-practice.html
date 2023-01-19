@@ -147,15 +147,15 @@
         writingToCart.addEventListener('click', () => {
         window.dataLayer = window.dataLayer || [];
         dataLayer.push({
-            'event': 'addToCart',
-            'item':{
-                'itemName': 'Writing practice notebook',
-                'itemId': 'l01',
+            'event': 'add_to_cart',
+            'items':[{
+                'item_name': 'Writing practice notebook',
+                'item_id': 'l01',
                 'currency': 'PLN',
                 'item_list_name': 'Language & study',
                 'price':'15',
                 'discout': 'false'
-            }
+            }]
     })
 });
     </script>

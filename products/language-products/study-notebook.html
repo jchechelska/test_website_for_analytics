@@ -147,15 +147,15 @@
         notebookToCart.addEventListener('click', () => {
         window.dataLayer = window.dataLayer || [];
         dataLayer.push({
-            'event': 'addToCart',
-            'item':{
-                'itemName': 'Study notebook',
-                'itemId': 'l02',
+            'event': 'add_to_cart',
+            'items':[{
+                'item_name': 'Study notebook',
+                'item_id': 'l02',
                 'currency': 'PLN',
                 'item_list_name': 'Language & study',
                 'price':'20',
                 'discout': 'false'
-        }
+        }]
     });
 });
     </script>

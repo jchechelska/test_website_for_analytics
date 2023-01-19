@@ -147,15 +147,15 @@
         kimchiToCart.addEventListener('click', () => {
         window.dataLayer = window.dataLayer || [];
         dataLayer.push({
-            'event': 'addToCart',
-            'item':{
-                'itemName': 'Homemade kimchi',
-                'itemId': 'f03',
+            'event': 'add_to_cart',
+            'items':[{
+                'item_name': 'Homemade kimchi',
+                'item_id': 'f03',
                 'currency': 'PLN',
                 'item_list_name': 'Food & kitchen',
                 'price':'40',
                 'discout': 'false'
-            }
+            }]
     });
 });
     </script>

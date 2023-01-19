@@ -148,15 +148,15 @@
         const chopsticksToCart = document.getElementById('add-to-cart-chopsticks');
         chopsticksToCart.addEventListener('click', () => {
         dataLayer.push({
-            'event': 'addToCart',
-            'item':{
-            'itemName': 'Handmade chopsticks',
-            'itemId': 'f01',
+            'event': 'add_to_cart',
+            'items':[{
+            'item_name': 'Handmade chopsticks',
+            'item_id': 'f01',
             'currency': 'PLN',
             'item_list_name': 'Food & kitchen',
             'price':'35',
             'discout': 'false'
-            }
+            }]
             })
         });
     </script>

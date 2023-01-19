@@ -147,15 +147,15 @@
         bookToCart.addEventListener('click', () => {
             window.dataLayer = window.dataLayer || [];
             dataLayer.push({
-                'event': 'addToCart',
-                'item':{
-                    'itemName': 'At Dusk',
-                    'itemId': 'b02',
+                'event': 'add_to_cart',
+                'items':[{
+                    'item_name': 'At Dusk',
+                    'item_id': 'b02',
                     'currency': 'PLN',
                     'item_list_name': 'Books',
                     'price':'45',
                     'discout': 'false'
-        }
+        }]
     });
 });
     </script>

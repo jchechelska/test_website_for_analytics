@@ -147,15 +147,15 @@
         bookmarkToCart.addEventListener('click', () => {
             window.dataLayer = window.dataLayer || [];
             dataLayer.push({
-                'event': 'addToCart',
-                'item':{
-                    'itemName': 'Bookmark',
-                    'itemId': 'b01',
+                'event': 'add_to_cart',
+                'items':[{
+                    'item_name': 'Bookmark',
+                    'item_id': 'b01',
                     'currency': 'PLN',
                     'item_list_name': 'Books',
                     'price':'15',
                     'discout': 'false'
-            }
+            }]
     });
 });
     </script>
