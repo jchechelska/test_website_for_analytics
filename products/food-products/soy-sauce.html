@@ -13,14 +13,17 @@
             window.dataLayer = window.dataLayer || [];
             dataLayer.push({
                 'event': 'view_item',
-                'items':[{
-                    'item_name': 'Homemade soy sauce',
-                    'item_id': 'f04',
-                    'currency': 'PLN',
-                    'item_list_name': 'Food & kitchen',
-                    'price':'50',
-                    'discout': 'false'
-                }]
+                'ecommerce':{
+                    'items':[{
+                        'item_name': 'Homemade soy sauce',
+                        'item_id': 'f04',
+                        'currency': 'PLN',
+                        'item_list_name': 'Food & kitchen',
+                        'price':'50',
+                        'discout': 'false'
+                    }]
+                }
+
             });
         </script>
   <meta charset="UTF-8">
@@ -148,14 +151,17 @@
         window.dataLayer = window.dataLayer || [];
         dataLayer.push({
             'event': 'add_to_cart',
-            'items':[{
-                'item_name': 'Homemade soy sauce',
-                'item_id': 'f04',
-                'currency': 'PLN',
-                'item_list_name': 'Food & kitchen',
-                'price':'50',
-                'discout': 'false'
-        }]
+            'ecommerce':{
+                'items':[{
+                    'item_name': 'Homemade soy sauce',
+                    'item_id': 'f04',
+                    'currency': 'PLN',
+                    'item_list_name': 'Food & kitchen',
+                    'price':'50',
+                    'discout': 'false'
+                }]
+            }
+
     });
 });
     </script>

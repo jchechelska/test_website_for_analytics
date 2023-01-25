@@ -13,14 +13,17 @@
             window.dataLayer = window.dataLayer || [];
             dataLayer.push({
                 'event': 'view_item',
-                'items':[{
-                    'item_name': 'Chinese teapot',
-                    'item_id': 'f02',
-                    'currency': 'PLN',
-                    'item_list_name': 'Food & kitchen',
-                    'price':'75',
-                    'discout': 'false'
-                }]
+                'ecommerce':{
+                    'items':[{
+                        'item_name': 'Chinese teapot',
+                        'item_id': 'f02',
+                        'currency': 'PLN',
+                        'item_list_name': 'Food & kitchen',
+                        'price':'75',
+                        'discout': 'false'
+                    }]
+                }
+
             });
         </script>
   <meta charset="UTF-8">
@@ -149,14 +152,17 @@
             window.dataLayer = window.dataLayer || [];
             dataLayer.push({
                 'event': 'add_to_cart',
-                'items':[{
-                'item_name': 'Chinese teapot',
-                'item_id': 'f02',
-                'currency': 'PLN',
-                'item_list_name': 'Food & kitchen',
-                'price':'75',
-                'discout': 'false'
-        }]
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Chinese teapot',
+                    'item_id': 'f02',
+                    'currency': 'PLN',
+                    'item_list_name': 'Food & kitchen',
+                    'price':'75',
+                    'discout': 'false'
+                    }]
+                }
+
     });
 });
     </script>
