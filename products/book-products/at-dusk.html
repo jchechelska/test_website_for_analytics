@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="../../styles.css">
+    <script src="../../header_footer.js" type="text/javascript" defer></script>
+
+	<!-- Storage default --> 
+	<script>
+
+		window.dataLayer = window.dataLayer || [];
+        	function gtag(){dataLayer.push(arguments);}
+        	gtag('set', 'ads_data_redaction', true);
+        	gtag('consent', 'default', {'ad_storage': 'denied', 'analytics_storage': 'denied', 'wait_for_update': 500});
+
+	</script>
+
+	<!-- Cookiebot banner -->
+
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6a4938c5-16f9-4868-bab9-6faa3f135c19" data-blockingmode="auto" type="text/javascript"></script> 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MMSWFCK');</script>
+    <!-- End Google Tag Manager -->
+        <!-- Data Layer custom data -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                'event': 'view_item',
+                'ecommerce':{
+                    'currency': 'PLN',
+                    'value': 45,
+                    'items':[{
+                        'item_name': 'At Dusk',
+                        'item_id': 'b02',
+                        'index': 0,
+                        'item_list_name': 'Books',
+                        'item_category': 'Books',
+                        'price': 45
+                    }]
+                }
+
+            });
+        </script>
+
+  <title>At Dusk</title>
+  
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMSWFCK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--Navbar-->
+    <main-header3></main-header3>
+    <!-- Content -->
+    <div class="container flex mx-auto px-4 py-6">
+        <h1 class="text-4xl font-bold text-center md:text-5xl md:text-left">'At Dusk' by Hwang Sok-yong</h1>
+    </div>
+    <div class="container flex flex-col md:flex-row mx-auto px-4 py-6 md:space-y-4">
+        <div class="flex flex-col px-4 md:w-1/2 pr-6">
+            <img src="../../icons/book2.jpg" alt="" class="rounded-lg align-left md:align-middle">
+        </div>
+        <div class="flex flex-col md:w-1/2 py-4 md:py-0 text-center md:text-left px-4 pb-4 leading-7 space-y-4" >
+            <h2 class="text-2xl font-bold">Details</h2>
+            <p>
+                Best book item!
+            </p>
+            <h2 class="text-2xl font-bold">Describtion</h2>
+            <p>
+                Price: 45zł <br>
+                Country: South Korea <br>
+            </p>            
+            <!--Button -->
+            <div class="content-center mx-auto md:mx-0">
+                <a href="../add-to-cart.html" id="add-to-cart-book" class="text-center content-center p-3 px-6 pt-2 text-white bg-sky-700 rounded-full baseline hover:bg-sky-600 w-50">Add to cart</a>
+            </div>
+            <a href="../book-products.html" class="text-1xl text-center md:text-left font-bold hover:text-sky-700">Check out other products</a>
+            
+
+        </div>
+    </div>
+    <!-- Footer -->
+	    <main-footer3></main-footer3>
+
+    <script src="../../index.js" charset="utf-8"></script>
+    <script>
+        const bookToCart = document.getElementById('add-to-cart-book');
+        bookToCart.addEventListener('click', () => {
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                'event': 'add_to_cart',
+                'ecommerce':{
+                    'currency': 'PLN',
+                    'value': 45,
+                    'items':[{
+                        'item_name': 'At Dusk',
+                        'item_id': 'b02',
+                        'index': 0,
+                        'item_list_name': 'Books',
+                        'item_category': 'Books',
+                        'price': 45
+
+                    }]
+                }
+    });
+});
+    </script>
+</body>
+</html>

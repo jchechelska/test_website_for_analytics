@@ -1,0 +1,773 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="../styles.css">
+    <script src="../header_footer.js" type="text/javascript" defer></script>
+
+	<!-- Storage default --> 
+	<script>
+
+		window.dataLayer = window.dataLayer || [];
+        	function gtag(){dataLayer.push(arguments);}
+        	gtag('set', 'ads_data_redaction', true);
+        	gtag('consent', 'default', {'ad_storage': 'denied', 'analytics_storage': 'denied', 'wait_for_update': 500});
+
+	</script>
+
+	<!-- Cookiebot banner -->
+
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6a4938c5-16f9-4868-bab9-6faa3f135c19" data-blockingmode="auto" type="text/javascript"></script> 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MMSWFCK');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Data Layer custom data -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        const viewreferrerURL = window.frames.top.document.referrer.split('/');
+        const viewreferrer = viewreferrerURL[6];
+        switch (viewreferrer){
+            case 'chopsticks.html':
+                dataLayer.push({
+                    'event': 'view_cart',
+                    'ecommerce':{
+                        'items':[{
+                        'item_name': 'Handmade chopsticks',
+                        'item_id': 'f01',
+                        'index': 0,
+                        'item_list_name': 'Food & kitchen',
+                        'item_category': 'Food & kitchen',
+                        'price': 35
+                    }]   
+                    }
+
+                });
+            break;
+            case 'teapot.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Chinese teapot',
+                    'item_id': 'f02',
+                    'index': 0,
+                    'item_list_name': 'Food & kitchen',
+                    'item_category': 'Food & kitchen',
+                    'price':75
+                }]
+                }
+
+            });
+            break;
+            case 'kimchi.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Homemade kimchi',
+                    'item_id': 'f03',
+                    'index': 0,
+                    'item_list_name': 'Food & kitchen',
+                    'item_category': 'Food & kitchen',
+                    'price':40
+                }]
+                }
+
+            });
+            break;
+            case 'soy-sauce.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Homemade soy sauce',
+                    'item_id': 'f04',
+                    'index': 0,
+                    'item_list_name': 'Food & kitchen',
+                    'item_category': 'Food & kitchen',
+                    'price': 50
+                }]
+                }
+
+            });
+            break;
+            case 'writing-practice.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Writing practice notebook',
+                'item_id': 'l01',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':15
+                }]
+                }
+   
+            });
+            break;
+            case 'study-notebook.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Study notebook',
+                'item_id': 'l02',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':20
+                }]
+                }
+  
+            });
+            break;
+            case 'hsk-book.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'HSK pocket book',
+                'item_id': 'l03',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':25
+                }]
+                }
+
+            });
+            break;
+            case 'calligraphy-set.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Calligraphy set',
+                'item_id': 'l04',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':40
+                }]
+                }
+   
+            });
+            break;
+            case 'bookmark.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                        'items':[{
+                        'item_name': 'Bookmark',
+                        'item_id': 'b01',
+                        'index': 0,
+                        'item_list_name': 'Books',
+                        'item_category': 'Books',
+                        'price': 15
+                }]
+                }
+ 
+            });
+            break;
+            case 'at-dusk.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                        'items':[{
+                        'item_name': 'At Dusk',
+                        'item_id': 'b02',
+                        'index': 0,
+                        'item_list_name': 'Books',
+                        'item_category': 'Books',
+                        'price': 45
+                }]
+                }
+
+            });
+            break;
+            case 'asian-bag.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Asian style bag',
+                'item_id': 'g01',
+                'index': 0,
+                'item_list_name': 'Gift ideas',
+                'item_category': 'Gift ideas',
+                'price':35
+                }]
+                }
+
+            });
+            break;
+            case 'lucky-cat.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Lucky cat',
+                    'item_id': 'g02',
+                    'index': 0,
+                    'item_list_name': 'Gift ideas',
+                    'item_category': 'Gift ideas',
+                    'price':45
+                }]
+                }
+
+            });
+            break;
+            case 'fan.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Asian handmade fan',
+                'item_id': 'g03',
+                'index': 0,
+                'item_list_name': 'Gift ideas',
+                'item_category': 'Gift ideas',
+                'price':75
+                }]
+                }
+
+            });
+            break;
+            case 'pillow.html':
+            dataLayer.push({
+                'event': 'view_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Pillow',
+                    'item_id': 'g04',
+                    'index': 0,
+                    'item_list_name': 'Gift ideas',
+                    'item_category': 'Gift ideas',
+                    'price':45
+                }]
+                }
+
+            });
+            break;
+
+
+                
+        }
+    </script>
+
+  <title>Cart</title>
+  
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMSWFCK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--Navbar-->
+    <main-header2></main-header2>
+
+    <div id="cart" class="container flex flex-col mx-auto text-center md:text-left px-4 py-6">
+        <h1 class="text-4xl font-bold md:text-5xl">Cart</h1>
+        <h2 class="text-2xl md:text-3xl">This are fake products, you cannot buy anything in here</h1>
+        <h2 class="text-2l font-bold md:text-3xl">Do you want to buy this product for analysis purposes?</h2>    
+        <div class="content-center mt-6 mx-auto md:mx-0">
+            <a href="purchase-successful.html" id="purchase-successful" class="text-center content-center p-3 px-6 pt-2 text-white bg-sky-700 rounded-full baseline hover:bg-sky-600 w-50">Buy</a>
+        </div>
+        <div class="content-center mt-6 mx-auto md:mx-0">
+            <a href="remove-from-cart.html" id="remove-from-cart" class="text-center content-center p-3 px-6 pt-2 text-white bg-sky-700 rounded-full baseline hover:bg-sky-600 w-50">Remove from cart</a>
+        </div>   
+        <div class="content-center mt-6 mx-auto md:mx-0">
+            <a href="../products.html" id="add-to-cart-book" class="text-center content-center p-3 px-6 pt-2 text-white bg-sky-700 rounded-full baseline hover:bg-sky-600 w-50">Check out our other products</a>
+        </div>     
+
+    </div>
+
+
+    <!-- Footer -->
+    <main-footer2></main-footer2>
+
+    <script src="../index.js" charset="utf-8"></script>
+    <script>
+        const purchase = document.getElementById('purchase-successful');
+        purchase.addEventListener('click', () => {
+            const referrerURL = document.referrer.split('/');
+            const referrer = referrerURL[6];
+            switch (referrer){
+                case 'chopsticks.html':
+                dataLayer.push({
+                    'event': 'purchase',
+                    'ecommerce':{
+                        'items':[{
+                        'item_name': 'Handmade chopsticks',
+                        'item_id': 'f01',
+                        'index': 0,
+                        'item_list_name': 'Food & kitchen',
+                        'item_category': 'Food & kitchen',
+                        'price': 35
+                    }]   
+                    }
+
+                });
+            break;
+            case 'teapot.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Chinese teapot',
+                    'item_id': 'f02',
+                    'index': 0,
+                    'item_list_name': 'Food & kitchen',
+                    'item_category': 'Food & kitchen',
+                    'price':75
+                }]
+                }
+
+            });
+            break;
+            case 'kimchi.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Homemade kimchi',
+                    'item_id': 'f03',
+                    'index': 0,
+                    'item_list_name': 'Food & kitchen',
+                    'item_category': 'Food & kitchen',
+                    'price':40
+                }]
+                }
+
+            });
+            break;
+            case 'soy-sauce.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Homemade soy sauce',
+                    'item_id': 'f04',
+                    'index': 0,
+                    'item_list_name': 'Food & kitchen',
+                    'item_category': 'Food & kitchen',
+                    'price': 50
+                }]
+                }
+
+            });
+            break;
+            case 'writing-practice.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Writing practice notebook',
+                'item_id': 'l01',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':15
+                }]
+                }
+   
+            });
+            break;
+            case 'study-notebook.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Study notebook',
+                'item_id': 'l02',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':20
+                }]
+                }
+  
+            });
+            break;
+            case 'hsk-book.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'HSK pocket book',
+                'item_id': 'l03',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':25
+                }]
+                }
+
+            });
+            break;
+            case 'calligraphy-set.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Calligraphy set',
+                'item_id': 'l04',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':40
+                }]
+                }
+   
+            });
+            break;
+            case 'bookmark.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                        'items':[{
+                        'item_name': 'Bookmark',
+                        'item_id': 'b01',
+                        'index': 0,
+                        'item_list_name': 'Books',
+                        'item_category': 'Books',
+                        'price': 15
+                }]
+                }
+ 
+            });
+            break;
+            case 'at-dusk.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                        'items':[{
+                        'item_name': 'At Dusk',
+                        'item_id': 'b02',
+                        'index': 0,
+                        'item_list_name': 'Books',
+                        'item_category': 'Books',
+                        'price': 45
+                }]
+                }
+
+            });
+            break;
+            case 'asian-bag.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Asian style bag',
+                'item_id': 'g01',
+                'index': 0,
+                'item_list_name': 'Gift ideas',
+                'item_category': 'Gift ideas',
+                'price':35
+                }]
+                }
+
+            });
+            break;
+            case 'lucky-cat.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Lucky cat',
+                    'item_id': 'g02',
+                    'index': 0,
+                    'item_list_name': 'Gift ideas',
+                    'item_category': 'Gift ideas',
+                    'price':45
+                }]
+                }
+
+            });
+            break;
+            case 'fan.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Asian handmade fan',
+                'item_id': 'g03',
+                'index': 0,
+                'item_list_name': 'Gift ideas',
+                'item_category': 'Gift ideas',
+                'price':75
+                }]
+                }
+
+            });
+            break;
+            case 'pillow.html':
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Pillow',
+                    'item_id': 'g04',
+                    'index': 0,
+                    'item_list_name': 'Gift ideas',
+                    'item_category': 'Gift ideas',
+                    'price':45
+                }]
+                }
+
+            });
+            break;
+
+
+
+                    
+            }
+        })
+    </script>
+        <script>
+            const remove = document.getElementById('remove-from-cart');
+            remove.addEventListener('click', () => {
+                const removeReferrerURL = document.referrer.split('/');
+                const removeReferrer = removeReferrerURL[6];
+                switch (removeReferrer){
+                    case 'chopsticks.html':
+                dataLayer.push({
+                    'event': 'remove_from_cart',
+                    'ecommerce':{
+                        'items':[{
+                        'item_name': 'Handmade chopsticks',
+                        'item_id': 'f01',
+                        'index': 0,
+                        'item_list_name': 'Food & kitchen',
+                        'item_category': 'Food & kitchen',
+                        'price': 35
+                    }]   
+                    }
+
+                });
+            break;
+            case 'teapot.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Chinese teapot',
+                    'item_id': 'f02',
+                    'index': 0,
+                    'item_list_name': 'Food & kitchen',
+                    'item_category': 'Food & kitchen',
+                    'price':75
+                }]
+                }
+
+            });
+            break;
+            case 'kimchi.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Homemade kimchi',
+                    'item_id': 'f03',
+                    'index': 0,
+                    'item_list_name': 'Food & kitchen',
+                    'item_category': 'Food & kitchen',
+                    'price':40
+                }]
+                }
+
+            });
+            break;
+            case 'soy-sauce.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Homemade soy sauce',
+                    'item_id': 'f04',
+                    'index': 0,
+                    'item_list_name': 'Food & kitchen',
+                    'item_category': 'Food & kitchen',
+                    'price': 50
+                }]
+                }
+
+            });
+            break;
+            case 'writing-practice.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Writing practice notebook',
+                'item_id': 'l01',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':15
+                }]
+                }
+   
+            });
+            break;
+            case 'study-notebook.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Study notebook',
+                'item_id': 'l02',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':20
+                }]
+                }
+  
+            });
+            break;
+            case 'hsk-book.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'HSK pocket book',
+                'item_id': 'l03',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':25
+                }]
+                }
+
+            });
+            break;
+            case 'calligraphy-set.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Calligraphy set',
+                'item_id': 'l04',
+                'index': 0,
+                'item_list_name': 'Language & study',
+                'item_category': 'Language & study',
+                'price':40
+                }]
+                }
+   
+            });
+            break;
+            case 'bookmark.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                        'items':[{
+                        'item_name': 'Bookmark',
+                        'item_id': 'b01',
+                        'index': 0,
+                        'item_list_name': 'Books',
+                        'item_category': 'Books',
+                        'price': 15
+                }]
+                }
+ 
+            });
+            break;
+            case 'at-dusk.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                        'items':[{
+                        'item_name': 'At Dusk',
+                        'item_id': 'b02',
+                        'index': 0,
+                        'item_list_name': 'Books',
+                        'item_category': 'Books',
+                        'price': 45
+                }]
+                }
+
+            });
+            break;
+            case 'asian-bag.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Asian style bag',
+                'item_id': 'g01',
+                'index': 0,
+                'item_list_name': 'Gift ideas',
+                'item_category': 'Gift ideas',
+                'price':35
+                }]
+                }
+
+            });
+            break;
+            case 'lucky-cat.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Lucky cat',
+                    'item_id': 'g02',
+                    'index': 0,
+                    'item_list_name': 'Gift ideas',
+                    'item_category': 'Gift ideas',
+                    'price':45
+                }]
+                }
+
+            });
+            break;
+            case 'fan.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                'items':[{
+                'item_name': 'Asian handmade fan',
+                'item_id': 'g03',
+                'index': 0,
+                'item_list_name': 'Gift ideas',
+                'item_category': 'Gift ideas',
+                'price':75
+                }]
+                }
+
+            });
+            break;
+            case 'pillow.html':
+            dataLayer.push({
+                'event': 'remove_from_cart',
+                'ecommerce':{
+                    'items':[{
+                    'item_name': 'Pillow',
+                    'item_id': 'g04',
+                    'index': 0,
+                    'item_list_name': 'Gift ideas',
+                    'item_category': 'Gift ideas',
+                    'price':45
+                }]
+                }
+
+            });
+            break;
+
+    
+    
+                        
+                }
+            })
+        </script>
+</body>
+</html>
